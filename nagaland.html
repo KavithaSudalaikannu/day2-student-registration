@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Nagaland</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fefcf8;
+      color: #333;
+    }
+    header {
+      background-color: #37517e;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    nav {
+      background-color: #142850;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    h2 {
+      color: #37517e;
+    }
+
+    /* Slider styles */
+    #slider {
+      text-align: center;
+        margin: 30px auto;
+      background-color:	#ffffff;
+    }
+    .slider {
+      position: relative;
+      max-width: 600px;
+      height: 400px;
+      object-fit: cover;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .active {
+      display: block;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      padding: 12px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      border: none;
+      font-size: 24px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Nagaland</h1>
+    <p>Your ultimate guide to the Land of Festivals</p>
+  </header>
+
+  <nav>
+    <a href="#slider">Gallery</a>
+    <a href="dest.html">Destinations</a>
+    <a href="fest.html">Festivals</a>
+    <a href="food.html">Cuisine</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="slider">
+    <h2>Explore the Beauty of Nagaland</h2>
+    <div class="slider">
+      <img src="nagahouse.jpeg" class="slide active" alt="Dzukou Valley">
+      <img src="hornbil.jpeg" class="slide " alt="Hornbill Festival" >
+      <img src="dzukou.jpeg" class="slide " alt="Traditional Naga House"  >
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+  </section>
+
+  <center>
+  <section id="intro">
+    <h2>Welcome to Nagaland</h2>
+    <p>Nagaland, nestled in the Northeast of India, is known for its vibrant tribal culture, picturesque landscapes, and colorful festivals.</p>
+  </section>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+      });
+    }
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+    setInterval(() => changeSlide(1), 5000);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+<!-- cuisine.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naga Cuisine</title>
+  <style>
+    body {
+      background: #f7f4ef;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #37517e;
+    }
+
+    header {
+      background: #37517e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .back {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .back a {
+      background: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3, .card p {
+      padding: 12px 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>Traditional Naga Cuisine</header>
+
+<div class="back"><a href="nagaland.html">⬅ Back to Home</a></div>
+
+<div class="container">
+  <div class="card">
+    <img src="smokedpork.jpeg" alt="Smoked Pork with Bamboo Shoot">
+    <h3>Smoked Pork with Bamboo Shoot</h3>
+    <p>A signature Naga dish made with smoked pork and tangy bamboo shoots.</p>
+  </div>
+
+  <div class="card">
+    <img src="axone.jpeg" alt="Axone">
+    <h3>Axone</h3>
+    <p>Fermented soybeans used to flavor meats and vegetables — strong, spicy, and authentic.</p>
+  </div>
+
+  <div class="card">
+    <img src="anishi.jpeg" alt="Anishi Curry">
+    <h3>Anishi Curry</h3>
+    <p>Made from dried yam leaves, typically cooked with pork or fish in Ao cuisine.</p>
+  </div>
+
+  <div class="card">
+    <img src="fermentedfish.jpeg" alt="Fermented Fish">
+    <h3>Fermented Fish</h3>
+    <p>A staple in many Naga dishes, adding strong umami flavor and depth to curries.</p>
+  </div>
+</div>
+
+<hr>
+
+</body>
+</html>

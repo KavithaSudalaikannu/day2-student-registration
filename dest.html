@@ -1,0 +1,116 @@
+<!-- destinations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nagaland Destinations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f4ef;
+      color: #333;
+    }
+
+    header {
+      background-color: #37517e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .destination {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .destination img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination h3 {
+      margin: 15px;
+      font-size: 20px;
+      color: #2e2b2b;
+    }
+
+    .destination p {
+      margin: 0 15px 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .destination:hover {
+      transform: scale(1.03);
+    }
+
+    .back {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .back a {
+      background: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Nagaland Destinations</header>
+
+  <div class="back">
+    <a href="nagaland.html">⬅ Back to Home</a>
+  </div>
+
+  <div class="container">
+    <div class="destination">
+      <img src="dzukou.jpeg" alt="Dzukou Valley">
+      <h3>Dzukou Valley</h3>
+      <p>A serene valley with vibrant flowers and trekking trails. A must-visit for nature lovers.</p>
+    </div>
+
+    <div class="destination">
+      <img src="kohima.jpeg" alt="Kohima Town">
+      <h3>Kohima</h3>
+      <p>The capital of Nagaland, rich in culture and history including WWII memorials and local markets.</p>
+    </div>
+
+    <div class="destination">
+      <img src="hornbil.jpeg" alt="Hornbill Festival">
+      <h3>Kisama Village</h3>
+      <p>Home to the iconic Hornbill Festival, showcasing the heritage of all Naga tribes.</p>
+    </div>
+
+    <div class="destination">
+      <img src="moke.jpeg" alt="Mokokchung">
+      <h3>Mokokchung</h3>
+      <p>A cultural hub of the Ao tribe, famous for warm hospitality and scenic landscapes.</p>
+    </div>
+  </div>
+
+</body>
+</html>
